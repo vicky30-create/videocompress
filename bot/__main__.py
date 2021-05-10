@@ -36,9 +36,6 @@ from bot.plugins.admin import (
     _banned_usrs
 )
 
-from bot.plugins.broadcast import (
-    broadcast_
-)
 
 from bot.plugins.status_message_fn import (
     exec_message_f,
@@ -92,13 +89,7 @@ if __name__ == "__main__" :
     )
     app.add_handler(incoming_banned_command)
 
-    # BROADCAST Admin Command
-    incoming_broadcast_command = MessageHandler(
-        broadcast_,
-        filters=filters.command(["broadcast"]) & filters.user(AUTH_USERS) & filters.reply
-    )
-    app.add_handler(incoming_broadcast_command)
-    
+      
     # START command
     incoming_start_message_handler = MessageHandler(
         incoming_start_message_f,
