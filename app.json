@@ -9,9 +9,9 @@
     "compress",
     "bot"
   ],
-  "success_url": "https://t.me/linux_repo",
-  "website": "https://t.me/Discovery_Updates",
-  "repository": "https://github.com/AbirHasan2005/VideoCompress",
+  "success_url": "https://t.me/videosupp",
+  "website": "https://t.me/logcompress",
+  "repository": "https://github.com/vicky30-create/videocompress",
   "env": {
     "ENV": {
       "description": "Setting this to ANYTHING will enable VARs when in ENV mode",
@@ -44,8 +44,8 @@
     },
     "AUTH_USERS": {
       "description": "Allow only pre-defined users to use this bot as Sudo User. Separate with Space. Just for using Admin Commands.",
-      "value": "715779594",
-      "required": false
+      "value": "",
+      "required": true
     },
     "FINISHED_PROGRESS_STR": {
       "description": "Should be a single character.",
